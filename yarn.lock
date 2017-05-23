@@ -9,8 +9,13 @@
     "@types/express" "*"
 
 "@types/chai@*", "@types/chai@^3.4.34":
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@types/chai/-/chai-3.5.1.tgz#9bd77fe12503ae00648b0945b38eab666adffe2e"
+=======
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-3.5.0.tgz#45e2dc2af9a5727be846af6e61d08ffc45d5b2ca"
+>>>>>>> Add dashboard panel
 
 "@types/chalk@^0.4.28", "@types/chalk@^0.4.31":
   version "0.4.31"
@@ -138,8 +143,13 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-2.0.29.tgz#5002e14f75e2d71e564281df0431c8c1b4a2a36a"
 
 "@types/mocha@^2.2.32":
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
   version "2.2.41"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-2.2.41.tgz#e27cf0817153eb9f2713b2d3f6c68f1e1c3ca608"
+=======
+  version "2.2.40"
+  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-2.2.40.tgz#9811dd800ece544cd84b5b859917bf584a150c4c"
+>>>>>>> Add dashboard panel
 
 "@types/multer@0.0.32":
   version "0.0.32"
@@ -471,6 +481,34 @@ archive-type@^3.0.0:
 archiver-utils@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/archiver-utils/-/archiver-utils-1.3.0.tgz#e50b4c09c70bf3d680e32ff1b7994e9f9d895174"
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
+=======
+  dependencies:
+    glob "^7.0.0"
+    graceful-fs "^4.1.0"
+    lazystream "^1.0.0"
+    lodash "^4.8.0"
+    normalize-path "^2.0.0"
+    readable-stream "^2.0.0"
+
+archiver@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/archiver/-/archiver-1.3.0.tgz#4f2194d6d8f99df3f531e6881f14f15d55faaf22"
+  dependencies:
+    archiver-utils "^1.3.0"
+    async "^2.0.0"
+    buffer-crc32 "^0.2.1"
+    glob "^7.0.0"
+    lodash "^4.8.0"
+    readable-stream "^2.0.0"
+    tar-stream "^1.5.0"
+    walkdir "^0.0.11"
+    zip-stream "^1.1.0"
+
+archiver@~0.14.0:
+  version "0.14.4"
+  resolved "https://registry.yarnpkg.com/archiver/-/archiver-0.14.4.tgz#5b9ddb9f5ee1ceef21cb8f3b020e6240ecb4315c"
+>>>>>>> Add dashboard panel
   dependencies:
     glob "^7.0.0"
     graceful-fs "^4.1.0"
@@ -595,7 +633,11 @@ async@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/async/-/async-1.2.1.tgz#a4816a17cd5ff516dfa2c7698a453369b9790de0"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 async@2.0.1, async@^2.0.0, async@^2.0.1:
+=======
+async@2.0.1:
+>>>>>>> Add dashboard panel
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/async/-/async-2.0.1.tgz#b709cc0280a9c36f09f4536be823c838a9049e25"
   dependencies:
@@ -1221,7 +1263,23 @@ browserstack@^1.2.0:
   dependencies:
     https-proxy-agent "1.0.0"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 buffer-crc32@^0.2.1, buffer-crc32@~0.2.3:
+=======
+buble@^0.15.0:
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/buble/-/buble-0.15.2.tgz#547fc47483f8e5e8176d82aa5ebccb183b02d613"
+  dependencies:
+    acorn "^3.3.0"
+    acorn-jsx "^3.0.1"
+    acorn-object-spread "^1.0.0"
+    chalk "^1.1.3"
+    magic-string "^0.14.0"
+    minimist "^1.2.0"
+    os-homedir "^1.0.1"
+
+buffer-crc32@^0.2.1, buffer-crc32@~0.2.1, buffer-crc32@~0.2.3:
+>>>>>>> Add dashboard panel
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/buffer-crc32/-/buffer-crc32-0.2.13.tgz#0d333e3f00eac50aa1454abd30ef8c2a5d9a7242"
 
@@ -1538,9 +1596,21 @@ commander@2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.6.0.tgz#9df7e52fb2a0cb0fb89058ee80c3104225f37e1d"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 commander@2.9.0, commander@2.9.x, commander@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
+  dependencies:
+    graceful-readlink ">= 1.0.0"
+
+commander@~2.8.1:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.8.1.tgz#06be367febfda0c330aa1e2a072d3dc9762425d4"
+=======
+commander@2.9.0, commander@2.9.x, commander@^2.8.1, commander@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
+>>>>>>> Add dashboard panel
   dependencies:
     graceful-readlink ">= 1.0.0"
 
@@ -1573,6 +1643,18 @@ component-inherit@0.0.3:
 compress-commons@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/compress-commons/-/compress-commons-1.2.0.tgz#58587092ef20d37cb58baf000112c9278ff73b9f"
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
+=======
+  dependencies:
+    buffer-crc32 "^0.2.1"
+    crc32-stream "^2.0.0"
+    normalize-path "^2.0.0"
+    readable-stream "^2.0.0"
+
+compress-commons@~0.2.0:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/compress-commons/-/compress-commons-0.2.9.tgz#422d927430c01abd06cd455b6dfc04cb4cf8003c"
+>>>>>>> Add dashboard panel
   dependencies:
     buffer-crc32 "^0.2.1"
     crc32-stream "^2.0.0"
@@ -1640,6 +1722,16 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
 crc32-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/crc32-stream/-/crc32-stream-2.0.0.tgz#e3cdd3b4df3168dd74e3de3fbbcb7b297fe908f4"
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
+=======
+  dependencies:
+    crc "^3.4.4"
+    readable-stream "^2.0.0"
+
+crc32-stream@~0.3.1:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/crc32-stream/-/crc32-stream-0.3.4.tgz#73bc25b45fac1db6632231a7bfce8927e9f06552"
+>>>>>>> Add dashboard panel
   dependencies:
     crc "^3.4.4"
     readable-stream "^2.0.0"
@@ -3278,9 +3370,15 @@ hpack.js@^2.1.6:
     readable-stream "^2.0.1"
     wbuf "^1.1.0"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 html-minifier@^3.0.1, html-minifier@^3.4.3:
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.4.3.tgz#eb3a7297c804611f470454eeebe0aacc427e424a"
+=======
+html-minifier@^3.0.1, html-minifier@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.4.1.tgz#0bf3c54d7f116d500b78c51fc4246039922dc250"
+>>>>>>> Add dashboard panel
   dependencies:
     camel-case "3.0.x"
     clean-css "4.0.x"
@@ -4022,7 +4120,11 @@ lodash@^3.0.0, lodash@^3.0.1, lodash@^3.2.0, lodash@^3.6.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 lodash@^4.0.0, lodash@^4.11.1, lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1, lodash@^4.8.0:
+=======
+lodash@^4.0.0, lodash@^4.11.1, lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.2, lodash@^4.3.0, lodash@^4.6.1, lodash@^4.8.0:
+>>>>>>> Add dashboard panel
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -4935,7 +5037,11 @@ punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 q@1.4.1, q@^1.4.1:
+=======
+q@1.4.1, q@^1.4.1, q@~1.4.1:
+>>>>>>> Add dashboard panel
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.4.1.tgz#55705bcd93c5f3673530c2c2cbc0c2b3addc286e"
 
@@ -5584,7 +5690,11 @@ source-map-support@^0.4.0, source-map-support@^0.4.2:
   dependencies:
     source-map "^0.5.3"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.3, source-map@~0.5.1:
+=======
+source-map@0.5.x, source-map@^0.5.3, source-map@~0.5.1:
+>>>>>>> Add dashboard panel
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
@@ -5924,6 +6034,10 @@ test-fixture@PolymerElements/test-fixture:
   version "2.0.1"
   resolved "https://codeload.github.com/PolymerElements/test-fixture/tar.gz/f72f0ff4e83b83b0157afed664f560da91d20f31"
 
+"test-fixture@github:polymerelements/test-fixture":
+  version "3.0.0-rc.1"
+  resolved "https://codeload.github.com/polymerelements/test-fixture/tar.gz/26118ef0467501c33c02316e7016a2837baba10f"
+
 test-value@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/test-value/-/test-value-1.1.0.tgz#a09136f72ec043d27c893707c2b159bfad7de93f"
@@ -6084,6 +6198,7 @@ typical@^2.3.0, typical@^2.4.2, typical@^2.5.0, typical@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/typical/-/typical-2.6.0.tgz#89d51554ab139848a65bcc2c8772f8fb450c40ed"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 uglify-js@^2.6.1, uglify-js@^2.7.0, uglify-js@^2.8.22, uglify-js@~2.8.22:
   version "2.8.22"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.22.tgz#d54934778a8da14903fa29a326fb24c0ab51a1a0"
@@ -6091,6 +6206,13 @@ uglify-js@^2.6.1, uglify-js@^2.7.0, uglify-js@^2.8.22, uglify-js@~2.8.22:
     source-map "~0.5.1"
     yargs "~3.10.0"
   optionalDependencies:
+=======
+uglify-js@2.8.x, uglify-js@^2.6.1, uglify-js@^2.7.0, uglify-js@^2.8.12:
+  version "2.8.12"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.12.tgz#8a50f5d482243650b7108f6080aa3a6afe2a6c55"
+  dependencies:
+    source-map "~0.5.1"
+>>>>>>> Add dashboard panel
     uglify-to-browserify "~1.0.0"
 
 uglify-to-browserify@~1.0.0:
@@ -6236,7 +6358,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 vargs@0.1.0:
+=======
+vargs@0.1.0, vargs@~0.1.0:
+>>>>>>> Add dashboard panel
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/vargs/-/vargs-0.1.0.tgz#6b6184da6520cc3204ce1b407cac26d92609ebff"
 
@@ -6419,7 +6545,78 @@ wd@^1.0.0:
     underscore.string "3.3.4"
     vargs "0.1.0"
 
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
 web-component-tester@^5.0.0, web-component-tester@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/web-component-tester/-/web-component-tester-5.0.1.tgz#e7a833283d8cfff31aabe0bf678eb1206f3d2564"
+=======
+wd@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/wd/-/wd-1.2.0.tgz#4112c4657eca5af593ebc060d54b80caeea04807"
+  dependencies:
+    archiver "1.3.0"
+    async "2.0.1"
+    lodash "4.16.2"
+    mkdirp "^0.5.1"
+    q "1.4.1"
+    request "2.79.0"
+    underscore.string "3.3.4"
+    vargs "0.1.0"
+
+web-component-tester@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/web-component-tester/-/web-component-tester-5.0.0.tgz#ead119f4dd631c7e2f223d37e90507de8c72860a"
+>>>>>>> Add dashboard panel
+  dependencies:
+    "@types/body-parser" "0.0.33"
+    "@types/chai" "^3.4.34"
+    "@types/chalk" "^0.4.31"
+    "@types/express" "^4.0.33"
+    "@types/glob" "^5.0.30"
+    "@types/grunt" "^0.4.20"
+    "@types/gulp" "^3.8.32"
+    "@types/lodash" "^4.14.38"
+    "@types/mime" "0.0.29"
+    "@types/minimatch" "^2.0.29"
+    "@types/mocha" "^2.2.32"
+    "@types/multer" "0.0.32"
+    "@types/node" "^4.0.30"
+    "@types/nomnom" "0.0.28"
+    "@types/sinon" "^1.16.31"
+    "@types/sinon-chai" "^2.7.27"
+    "@types/socket.io" "^1.4.27"
+    accessibility-developer-tools "^2.10.0"
+    async "^1.5.0"
+    body-parser "^1.14.2"
+    chai "^3.2.0"
+    chalk "^1.1.1"
+    cleankill "^1.0.0"
+    express "^4.8.5"
+    findup-sync "^0.2.1"
+    glob "^5.0.15"
+    lodash "^3.0.1"
+    mocha "^3.1.2"
+    multer "^1.1.0"
+    nomnom "^1.8.1"
+    promisify-node "^0.4.0"
+    resolve "^1.0.0"
+    send "^0.11.1"
+    serve-waterfall "^1.1.0"
+    server-destroy "^1.0.1"
+    sinon "^1.11.1"
+    sinon-chai "^2.6.0"
+    socket.io "^1.3.7"
+    stacky "^1.3.1"
+    test-fixture PolymerElements/test-fixture
+    wd "^1.0.0"
+  optionalDependencies:
+    update-notifier "^0.6.0"
+    wct-local "^2.0.8"
+    wct-sauce "^1.8.2"
+
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
+=======
+web-component-tester@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/web-component-tester/-/web-component-tester-5.0.1.tgz#e7a833283d8cfff31aabe0bf678eb1206f3d2564"
   dependencies:
@@ -6469,6 +6666,11 @@ web-component-tester@^5.0.0, web-component-tester@^5.0.1:
     wct-local "^2.0.8"
     wct-sauce "^1.8.2"
 
+which-module@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/which-module/-/which-module-1.0.0.tgz#bba63ca861948994ff307736089e3b96026c2a4f"
+
+>>>>>>> Add dashboard panel
 which@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/which/-/which-1.1.1.tgz#9ce512459946166e12c083f08ec073380fc8cbbb"
@@ -6751,6 +6953,18 @@ yeoman-welcome@^1.0.0:
 zip-stream@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/zip-stream/-/zip-stream-1.1.1.tgz#5216b48bbb4d2651f64d5c6e6f09eb4a7399d557"
+<<<<<<< 7fbc5df9a08ced3da3ed62bebe2cf6ebda12be75
+=======
+  dependencies:
+    archiver-utils "^1.3.0"
+    compress-commons "^1.1.0"
+    lodash "^4.8.0"
+    readable-stream "^2.0.0"
+
+zip-stream@~0.5.0:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/zip-stream/-/zip-stream-0.5.2.tgz#32dcbc506d0dab4d21372625bd7ebaac3c2fff56"
+>>>>>>> Add dashboard panel
   dependencies:
     archiver-utils "^1.3.0"
     compress-commons "^1.1.0"

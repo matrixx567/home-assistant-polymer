@@ -1,0 +1,106 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+
+<link rel="import" href="../../src/components/ha-menu-button.html">
+<link rel="import" href="../../src/resources/ha-style.html">
+
+<script src="../../bower_components/snap.svg/dist/snap.svg-min.js"></script>
+
+<dom-module id="ha-panel-dashboard">
+  <template>
+    <style include="iron-flex iron-positioning ha-style">
+       :host {
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+      }
+
+      app-header-layout {
+        background-color: #E5E5E5;
+      }
+
+      paper-tabs {
+        margin-left: 12px;
+        --paper-tabs-selection-bar-color: #FFF;
+        text-transform: uppercase;
+      }
+    </style>
+
+    <app-header-layout has-scrolling-region id='layout'>
+      <app-header effects="waterfall" condenses fixed>
+        <app-toolbar>
+          <ha-menu-button narrow='[[narrow]]' show-menu='[[showMenu]]'></ha-menu-button>
+          <div main-title>Dashboard</div>
+        </app-toolbar>
+
+        <div sticky hidden$='[[_hasSingleBoard(config)]]'>
+          <paper-tabs scrollable selected='[[currentBoard]]' attr-for-selected='data-entity' on-iron-select='handleBoardSelected'>
+            <template is='dom-repeat' items='[[config]]'>
+              <paper-tab data-entity$='[[item.id]]'>
+                <template is='dom-if' if='[[item.icon]]'>
+                  <iron-icon title$='[[_computeBoardName(item)]]' icon='[[item.icon]]'></iron-icon>
+                </template>
+                <template is='dom-if' if='[[!item.icon]]'>
+                  [[_computeBoardName(item)]]
+                </template>
+              </paper-tab>
+            </template>
+          </paper-tabs>
+        </div>
+      </app-header>
+
+      <!--TODO add svg panel-->
+
+    </app-header-layout>
+  </template>
+
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'ha-panel-dashboard',
+
+    properties: {
+      hass: {
+        type: Object,
+      },
+      panel: {
+        type: Object,
+      },
+      config: {
+        type: Array,
+        computed: '_computeConfig(panel)',
+      },
+      currentBoard: {
+        type: String,
+        computed: 'computeCurrentBoard(config)',
+      }
+    },
+
+    _computeConfig: function (panel) {
+      return panel.config;
+    },
+    _computeBoardName: function (board) {
+      var board_name = board.id;
+      if ('name' in board) {
+        board_name = board.name;
+      }
+      return board_name;
+    },
+    _hasSingleBoard: function (boards) {
+      return boards.length <= 1;
+    },
+
+    handleBoardSelected: function (ev) {
+      var board = ev.detail.item.getAttribute('data-entity') || null;
+      this.currentBoard = board;
+    },
+     computeCurrentBoard: function (config) {
+      return config[0].id;
+    }
+  });
+
+</script>
