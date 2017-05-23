@@ -22,7 +22,8 @@
     "vaadin-date-picker": "^1.2.1",
     "paper-slider": "1.0.14",
     "leaflet": "^1.0.2",
-    "polymer-sortablejs": "^0.1.3"
+    "polymer-sortablejs": "^0.1.3",
+    "Snap.svg": "^0.5.1"
   },
   "resolutions": {
     "paper-slider": "1.0.14"
